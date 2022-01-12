@@ -2,6 +2,9 @@
 body {
     background-color: blue;
 }
+#aboutUs {
+  color: #000;
+}
 .container {
     position: relative;
     text-align: center;
@@ -20,4 +23,9 @@ body {
   .column {
     flex: 33.33%;
     padding: 5px;
+  }
+  @media screen and (max-width: 500px) {
+    .column {
+      width: 100%;
+    }
   }
