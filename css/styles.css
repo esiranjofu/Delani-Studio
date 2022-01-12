@@ -1,7 +1,7 @@
 /* checking whether the css file is correctly linked */
-body {
+/* body {
     background-color: blue;
-}
+} */
 #aboutUs {
   color: #000;
 }
@@ -28,4 +28,9 @@ body {
     .column {
       width: 100%;
     }
+  }
+  .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
   }
