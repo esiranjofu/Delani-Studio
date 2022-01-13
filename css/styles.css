@@ -1,6 +1,6 @@
 /* checking whether the css file is correctly linked */
 body {
-    background-color: blue;
+    background-color: white;
 }
 #aboutUs, #whatWeDo {
   color: #000;
@@ -25,7 +25,7 @@ body {
     flex: 33.33%;
     padding: 5px;
   }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 00px) {
     .column {
       width: 100%;
     }
