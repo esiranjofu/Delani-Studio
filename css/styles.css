@@ -4,13 +4,25 @@ body {
 }
 #aboutUs, #whatWeDo {
   color: #000;
-  font-size: medium;
+  text-align: center;
+  font-size: small;
+  font-family: 'Yantramanav', sans-serif;
 }
 h2, h3, h5 {
   font-family: 'Merriweather', serif;
 }
 img {
   width: auto
+  }
+  .services {
+    background-size: cover;
+    text-align: center;
+    color: white;
+    font-size: small;
+    font-family: 'Yantramanav', sans-serif;
+  }
+  .hide {
+    display: none;
   }
 .container {
     position: relative;
