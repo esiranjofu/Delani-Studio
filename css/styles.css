@@ -2,8 +2,9 @@
 body {
     background-color: blue;
 }
-#aboutUs {
+#aboutUs, #whatWeDo {
   color: #000;
+  font-size: medium;
 }
 .container {
     position: relative;
