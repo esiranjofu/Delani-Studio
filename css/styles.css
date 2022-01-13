@@ -1,6 +1,6 @@
 /* checking whether the css file is correctly linked */
 body {
-    background-color: white;
+    background-color: blue;
 }
 #aboutUs, #whatWeDo {
   color: #000;
@@ -12,7 +12,8 @@ h2, h3, h5 {
   font-family: 'Merriweather', serif;
 }
 img {
-  width: auto
+  width: auto;
+  height: auto;
   }
   .services {
     background-size: cover;
@@ -51,3 +52,6 @@ img {
   .container what-we-do{
     color: #000;
   }
+  /* .hover {
+    display: ruby-text;
+  } */
