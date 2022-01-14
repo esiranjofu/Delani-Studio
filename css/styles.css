@@ -1,14 +1,14 @@
 /* checking whether the css file is correctly linked */
 body {
-    background-color: blue;
+    background-color: white;
 }
-#aboutUs, #whatWeDo {
+#aboutUs, #whatWeDo, #portfolio {
   color: #000;
   text-align: center;
   font-size: small;
   font-family: 'Yantramanav', sans-serif;
 }
-h2, h3, h5 {
+h2, h3, h4, h5 {
   font-family: 'Merriweather', serif;
 }
 img {
@@ -22,7 +22,7 @@ img {
     font-size: small;
     font-family: 'Yantramanav', sans-serif;
   }
-  .hide {
+  .hide, .hover {
     display: none;
   }
 .container {
