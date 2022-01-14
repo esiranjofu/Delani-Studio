@@ -52,6 +52,13 @@ img {
   .container what-we-do{
     color: #000;
   }
+  div.footer {
+    color: black;
+    justify-content: center;
+    text-align: center;
+    font-size: x-small;
+    font-family: 'Amaranth', sans-serif;
+  }
   /* .hover {
     display: ruby-text;
   } */
