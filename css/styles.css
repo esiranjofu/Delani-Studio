@@ -12,8 +12,9 @@ h2, h3, h4, h5 {
   font-family: 'Merriweather', serif;
 }
 img {
-  width: auto;
-  height: auto;
+  height: 400;
+  max-width: 560;
+  padding:2px;
   }
   .services {
     background-size: cover;
@@ -38,6 +39,7 @@ img {
   }
   .row {
     display: flex;
+    padding:2%;
   }
   
   .column {
