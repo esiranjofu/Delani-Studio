@@ -1,8 +1,8 @@
 /* checking whether the css file is correctly linked */
 body {
-    background-color: white;
+    background-color: blue;
 }
-#aboutUs, #whatWeDo, #portfolio {
+#aboutUs, #whatWeDo, #portfolio, #customerinfo{
   color: #000;
   text-align: center;
   font-size: small;
