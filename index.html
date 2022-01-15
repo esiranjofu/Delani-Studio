@@ -152,72 +152,55 @@
                   Above 201
                 </label>    
               </div>
-                  <div class="form-group">
-                    <label for="beverage">Select a beverage</label>
-                    <select class="form-control" id="beverage">
-                        <option>Coffee</option>
-                        <option>Tea</option>
-                        <option>Kombucha</option>
-                        <option>Water</option>
-                      </select>
-                  </div>
-    
-                  <div class="checkbox">
-                    <label for="chocolate">Chocolate</label>
-                    <br/>
-                    <label>
-                        <input type="checkbox" name="flavor" value="chocolate"  id="cream" >Cream
-                        <input type="checkbox" name="flavor" value="chocolate" id="milk">
-                        Milk
-                    </label>
-                  </div>
-    
-      <div class="form-group">
-        <label for="w3review">Your Comments:</label>
-        <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
-      </div>
-    
-                  <div class="form-group">
-                    <label for="color">What is your favorite color?</label>
-                    <input id="color" class="form-control" type="color">
-                  </div>
-    
-                  <div class="form-group">
-                    <label for="animal">An animal</label>
-                    <input id="animal" class="form-control" type="text">
-                  </div>
-    
-                  <div class="form-group">
-                    <label for="born">Date of birth:</label>
-                    <input id="born" class="form-control" type="date">
-                  </div>
-                
-                  <div class="form-group">
-                    <label for="exclamation">An exclamation</label>
-                    <input id="exclamation" class="form-control" type="text">
-                  </div>
-                  <div class="form-group">
-                    <label for="verb">A past tense verb</label>
-                    <input id="verb" class="form-control" type="text">
-                  </div>
-                  <div class="form-group">
-                    <fieldset>
-                      <legend>Company Billing Address</legend>
-                      <label for="billAddress">Address</label>
-                      <input type="text" id="billAddress" name="billAddress" />
-                      <label for="billCity">City</label>
-                      <input type="text" id="billCity" name="billCity" />
-                      <label for="billProvince">Province</label>
-                      <input type="text" id="billProvince" name="billProvince" />
-                      <label for="billPC" >Postal Code</label>
-                      <input type="text" id="billPC" name="billPC" />
-                      <label for="telNo" >Telephone Contact</label>
-                      <input type="text" id="telNo" name="telNo" />
-                  </fieldset>
-                  </div>
+              <!-- <div class="form-group">
+                <label for="industry">Select your industry</label>
+                  <select class="form-control" id="beverage">
+                    <option>Film Making</option>
+                    <option>Graphic Design</option>
+                    <option>Digital Media</option>
+                    <option>Music Industry</option>
+                    <option>Architecture</option>
+                    <option>Broadcasting</option>
+                 </select>
+              </div> -->
+              <div class="checkbox">
+              <label for="industry">Choose your industry</label>
+                <br/>
+              <label>
+              <input type="checkbox" name="industry" value="industry" id="film" >Film Making
+              <input type="checkbox" name="industry" value="industry" id="graphic">Graphic Design
+              <input type="checkbox" name="industry" value="industry" id="digital">Digital Media
+              <input type="checkbox" name="industry" value="industry" id="film" >Film Making
+              <input type="checkbox" name="industry" value="industry" id="arch"> Architecture
+              <input type="checkbox" name="industry" value="industry" id="film" >Broadcasting
+              </label>
+              </div>
+              <div class="form-group">
+                <label for="date">Date of Inception:</label>
+                <input id="date" class="form-control" type="date">
+              </div>
+              <div class="form-group">
+              <label for="comments">Company Comments:</label>
+              <textarea id="comments" name="comments" rows="6" cols="50"></textarea>
+              </div>
+              <div class="form-group">
+                <fieldset>
+                  <legend>Company Billing Address</legend>
+                    <label for="billAddress">Address</label>
+                    <input type="text" id="billAddress" name="billAddress" />
+                    <label for="billCity">City</label>
+                    <input type="text" id="billCity" name="billCity" />
+                    <label for="billProvince">Province</label>
+                    <input type="text" id="billProvince" name="billProvince" />
+                    <label for="billPC" >Postal Code</label>
+                    <input type="text" id="billPC" name="billPC" />
+                    <label for="telNo" >Telephone Contact</label>
+                    <input type="text" id="telNo" name="telNo" />
+                </fieldset>
+              </div>
                   <button type="submit" class="btn">Show me the story!</button>
-              </form>  
-            </div>
+            </form>  
+        </div>
         <div class="footer" id="socialMediaIcons">
             <br><br>
             <!--Twitter-->
