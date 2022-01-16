@@ -1,8 +1,8 @@
 /* checking whether the css file is correctly linked */
 body {
-    background-color: blue;
+    background-color: white;
 }
-#aboutUs, #whatWeDo, #portfolio, #customerinfo{
+#aboutUs, #whatWeDo, #portfolio, h4{
   color: #000;
   text-align: center;
   font-size: small;
@@ -12,11 +12,11 @@ h2, h3, h4, h5 {
   font-family: 'Merriweather', serif;
 }
 img {
-  height: 400;
-  max-width: 560;
+  height: auto;
+  max-width: auto;
   padding:2px;
   }
-  .services {
+  .services, #customerinfo {
     background-size: cover;
     text-align: center;
     color: white;
@@ -26,6 +26,10 @@ img {
   .hide, .hover {
     display: none;
   }
+#portfolio{
+  margin-left:10%;
+  margin-right: 10%; 
+}
 .container {
     position: relative;
     text-align: center;
@@ -54,12 +58,8 @@ img {
   .container what-we-do{
     color: #000;
   }
-  div.footer {
-    color: black;
-    justify-content: center;
-    text-align: center;
-    font-size: x-small;
-    font-family: 'Amaranth', sans-serif;
+  footer{
+    margin-top:auto; 
   }
   /* .hover {
     display: ruby-text;
