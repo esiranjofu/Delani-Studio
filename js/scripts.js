@@ -2,8 +2,9 @@
 // alert('hi')
 $(document).ready(function() {
     $("#design").click(function(){
-        $("#design-showing").toggle();
         $(".clickme").toggle();
-      })
+        $("#design-show").toggle();
+        $("#design-show").css("textAlign", "center");
+    })
     })
 // alert('hi')
