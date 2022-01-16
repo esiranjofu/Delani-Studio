@@ -26,6 +26,9 @@ img {
   .hide, .hover {
     display: none;
   }
+  .clickme {
+    display: block;
+  }
 #portfolio{
   margin-left:10%;
   margin-right: 10%; 
@@ -58,8 +61,12 @@ img {
   .container what-we-do{
     color: #000;
   }
-  footer{
-    margin-top:auto; 
+  footer {
+    color: black;
+    justify-content: center;
+    text-align: center;
+    font-size: x-small;
+    font-family: 'Amaranth', sans-serif;
   }
   /* .hover {
     display: ruby-text;
