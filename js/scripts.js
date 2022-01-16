@@ -36,5 +36,23 @@ $( this ).css( styles );
 $( this ).css( styles );
 });
 })
+
+$("#product").click(function(){
+    $(".clickme3").toggle();
+    $("#product-show").toggle();
+    $("#product-show").css("textAlign", "center");
+    $("p")
+    .on( "mouseenter", function() {
+        $( this ).css({
+        "font-weight": "bolder"
+    });
+    })
+    .on( "mouseleave", function() {
+        var styles = {
+        fontWeight: "normal"
+};
+$( this ).css( styles );
+});
+})
 })
 // alert('hi')
