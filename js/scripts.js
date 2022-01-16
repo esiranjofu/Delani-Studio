@@ -5,6 +5,11 @@ $(document).ready(function() {
         $(".clickme").toggle();
         $("#design-show").toggle();
         $("#design-show").css("textAlign", "center");
+        $("p").on({
+            mouseenter: function(){
+            $(this).css({"font-weight": "bold"});
+            }
+    })
     })
     })
 // alert('hi')
