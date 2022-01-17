@@ -56,10 +56,25 @@ $( this ).css( styles );
 })
 })
 
-$(".hover").hover(function(){
-    $(this).animate({opacity:'1'});
-  },
-  function(){
-    $(this).animate({opacity:'0'});
-  })
+$(document).ready(function(){
+    $("#work4").mouseover(function(){
+      $(".overlay4").show();
+    }).mouseout(function(){
+      $(".overlay4").hide();
+    });
+  });
+// $("#work4").on({
+//     mouseenter: function () {
+//         $(".overlay").show;
+//     },
+//     mouseleave: function () {
+//         $("overlay").hide
+//     }
+// });
+// $(".overlay").hover(function(){
+//     $(this).animate({opacity:'1'});
+//   },
+//   function(){
+//     $(this).animate({opacity:'0'});
+//   })
 // alert('hi')
