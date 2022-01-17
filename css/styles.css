@@ -27,7 +27,7 @@ img {
       display:flex;
       justify-content: center;
     }
-  .hide, .hover {
+  .hide, .overlay {
     display: none;
   }
   .clickme {

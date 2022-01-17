@@ -55,4 +55,11 @@ $( this ).css( styles );
 });
 })
 })
+
+$(".hover").hover(function(){
+    $(this).animate({opacity:'1'});
+  },
+  function(){
+    $(this).animate({opacity:'0'});
+  })
 // alert('hi')
