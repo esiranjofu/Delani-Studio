@@ -23,6 +23,10 @@ img {
     font-size: small;
     font-family: 'Yantramanav', sans-serif;
   }
+  #customerinfo {
+      display:flex;
+      justify-content: center;
+    }
   .hide, .hover {
     display: none;
   }
