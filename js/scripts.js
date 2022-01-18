@@ -99,13 +99,56 @@ $(document).ready(function(){
     }).mouseout(function(){
         $(".overlay7").hide();
     });
-    
+
     $("#work8").mouseover(function(){
         $(".overlay8").show();
     }).mouseout(function(){
         $(".overlay8").hide();
     })
+// form input gathering
+$(document).ready(function() {
+    $("#getDetails").submit(function(event) {
 
+        // $('input[type="checkbox"]').click(function(){
+        //     if($(this).prop("checked") == true){
+        //         console.log("Checkbox is checked.");
+        //         }
+        //     else if($(this).prop("checked") == false){
+        //         alert("Kindly tick one option for your overhead staff.");
+        //         }
+        //     });
+        // });
+        
+        var organisation = $("input#companytName").val();
+        var contactName = $("input#contactPerson").val();
+        var numberOfStaff = $("input#staffOverhead").val();
+        var serviceIndustry = $("input#exclamation").val();
+
+        let checkboxes = document.querySelectorAll('input[name="group1"]:checked');
+        if (checkboxes = false) {
+            alert ("please tick choose the category of your staff overhead staff!")
+        }else if (organisation == ""){
+            alert("Please input your organisation name");
+        }else if (contactName == ""){
+            alert ("Could we please have the name of the contact person?")
+        }else if           
+
+        // var verbInput = $("input#verb").val();
+        // var nounInput = $("input#noun").val();
+        // var flavor = $("input#noun").val();
+
+//         $(".person1").text(person1Input);
+//         $(".person2").text(person2Input);
+//         $(".animal").text(animalInput);
+//         $(".exclamation").text(exclamationInput);
+//         $(".verb").text(verbInput);
+//         $(".noun").text(nounInput);
+
+//         $("#story").show();
+
+//         event.preventDefault();
+//     });
+// });
 // $("#work4").on({
 //     mouseenter: function () {
 //         $(".overlay").show;
