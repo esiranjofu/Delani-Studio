@@ -114,6 +114,7 @@ $(document).ready(function() {
             }
         else
             alert(organisationInput);
+    })
         // $('input[type="checkbox"]').click(function(){
         //     if($(this).prop("checked") == true){
         //         console.log("Checkbox is checked.");
@@ -132,79 +133,15 @@ $(document).ready(function() {
             alert(contactNameInput);
         var CustomertelNoInput = $("input#telNo").val();
             alert(CustomertelNoInput);
-        function validateFormInput() {
-            var staffOverHeadInput = document.querySelector('input[name = "group"]:checked');
-                if(staffOverHeadInput != null){  //Test if something was checked
-                console.log(staffOverHeadInput.value); //Alert the value of the checked.
-                } else {
-                alert('Kindly choose a group for your staff overhead!'); //Alert, nothing was checked.
-                }
-            var serviceIndustryInput = document.querySelector('input[name = "industry"]:checked');
-                if(serviceIndustryInput != null){  //Test if something was checked
-                console.log(serviceIndustryInput.value); //Alert the value of the checked.
-                } else {
-                alert('Kindly choose your industry of operation!'); //Alert, nothing was checked.
-                }
-            if(organisationInput== ""){
-              alert( "Kindly provide your company name" );
-              }
-            else if( contactNameInput == "") {
-              alert( "Please provide for us the contact person's name" );}
-            else if(CustomertelNoInput !=null) {
-              alert( "Please provide your contact tel number for ease of follow up" );
-            }else  {
-              alert(` Hi ${contactNameInput} We have received your message. Thank you for reaching out to us. One of our sales executives will reach out to you through the provided tel number for further guidance`)
-              
-            //   {var staffOverHead = document.querySelector('input[name = "group"]:checked');
-
-            //   if(checked_gender != null){  //Test if something was checked
-            //   alert(checked_gender.value); //Alert the value of the checked.
-            //   } else {
-            //   alert('Nothing checked'); //Alert, nothing was checked.
-            //   }}
-        // let checkboxes = document.querySelectorAll('input[name="group1"]:checked');
-        // if (checkboxes = false) {
-        //     alert ("please tick choose the category of your staff overhead staff!")
-        // }else if (organisation == ""){
-        //     alert("Please input your organisation name");
-        // }else if (contactName == ""){
-        //     alert ("Could we please have the name of the contact person?")
-        // }else if           
-
-        // var verbInput = $("input#verb").val();
-        // var nounInput = $("input#noun").val();
-        // var flavor = $("input#noun").val();
-
-        $(".contactName").text(contactNameInput);
-        $(".companyName").text(organisationInput);
-        $(".telNo").text(CustomertelNoInput);
-
-//         $(".animal").text(animalInput);
-//         $(".exclamation").text(exclamationInput);
-//         $(".verb").text(verbInput);
-//         $(".noun").text(nounInput);
-
-        $("#getDetails").show();
-
-        event.preventDefault();
-//     });
-// });
-// $("#work4").on({
-//     mouseenter: function () {
-//         $(".overlay").show;
-//     },
-//     mouseleave: function () {
-//         $("overlay").hide
-//     }
-// });
-// $(".overlay").hover(function(){
-//     $(this).animate({opacity:'1'});
-//   },
-//   function(){
-//     $(this).animate({opacity:'0'});
-//   })
-// alert('hi')
-            }
-        }
-    })
-})
+        var operationIndustry = $("#industry").is(':checked');
+           if (operationIndustry) {
+               console.log('checked')
+           }else
+           alert('please choose your industry of operation')
+        });
+        var staffOverHead= $("#group").is(':checked');
+            if (staffOverHead) {
+                alert(` Hi ${contactNameInput} We have received your message. Thank you for reaching out to us. One of our sales executives will reach out to you through the provided tel number for further guidance`)
+            }else
+            alert('Please choose your company\'s overhead group')
+//   
