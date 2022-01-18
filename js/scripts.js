@@ -107,8 +107,13 @@ $(document).ready(function(){
     })
 // form input gathering
 $(document).ready(function() {
-    $("#getDetails").submit(function(event) {
-
+    $("#customerinfo form").submit(function(event) {
+        var organisationInput = $("input#companytName").val();
+        if(organisationInput== ""){
+            alert( "Kindly provide your company name" );
+            }
+        else
+            alert(organisationInput);
         // $('input[type="checkbox"]').click(function(){
         //     if($(this).prop("checked") == true){
         //         console.log("Checkbox is checked.");
@@ -119,30 +124,36 @@ $(document).ready(function() {
         //     });
         // });
         
-        var organisation = $("input#companytName").val();
-        var contactName = $("input#contactPerson").val();
-        var CustomertelNo = $("input#telNo").val();
-        
+        // var organisationInput = $("input#companytName").val();
+        var contactNameInput = $("input#contactPerson").val();
+        if( contactNameInput == "") {
+            alert( "Please provide for us the contact person's name" );}
+        else
+            alert(contactNameInput);
+        var CustomertelNoInput = $("input#telNo").val();
+            alert(CustomertelNoInput);
         function validateFormInput() {
-            var staffOverHead = document.querySelector('input[name = "group"]:checked');
-                if(staffOverHead != null){  //Test if something was checked
-                console.log(staffOverHead.value); //Alert the value of the checked.
+            var staffOverHeadInput = document.querySelector('input[name = "group"]:checked');
+                if(staffOverHeadInput != null){  //Test if something was checked
+                console.log(staffOverHeadInput.value); //Alert the value of the checked.
                 } else {
                 alert('Kindly choose a group for your staff overhead!'); //Alert, nothing was checked.
                 }
-            var serviceIndustry = document.querySelector('input[name = "industry"]:checked');
-                if(serviceIndustry != null){  //Test if something was checked
-                console.log(serviceIndustry.value); //Alert the value of the checked.
+            var serviceIndustryInput = document.querySelector('input[name = "industry"]:checked');
+                if(serviceIndustryInput != null){  //Test if something was checked
+                console.log(serviceIndustryInput.value); //Alert the value of the checked.
                 } else {
                 alert('Kindly choose your industry of operation!'); //Alert, nothing was checked.
                 }
-            if(organisation== ""){
+            if(organisationInput== ""){
               alert( "Kindly provide your company name" );
               }
-            else if( contactName == "") {
+            else if( contactNameInput == "") {
               alert( "Please provide for us the contact person's name" );}
-            else if(CustomertelNo !=null) {
+            else if(CustomertelNoInput !=null) {
               alert( "Please provide your contact tel number for ease of follow up" );
+            }else  {
+              alert(` Hi ${contactNameInput} We have received your message. Thank you for reaching out to us. One of our sales executives will reach out to you through the provided tel number for further guidance`)
               
             //   {var staffOverHead = document.querySelector('input[name = "group"]:checked');
 
@@ -164,16 +175,18 @@ $(document).ready(function() {
         // var nounInput = $("input#noun").val();
         // var flavor = $("input#noun").val();
 
-//         $(".person1").text(person1Input);
-//         $(".person2").text(person2Input);
+        $(".contactName").text(contactNameInput);
+        $(".companyName").text(organisationInput);
+        $(".telNo").text(CustomertelNoInput);
+
 //         $(".animal").text(animalInput);
 //         $(".exclamation").text(exclamationInput);
 //         $(".verb").text(verbInput);
 //         $(".noun").text(nounInput);
 
-//         $("#story").show();
+        $("#getDetails").show();
 
-//         event.preventDefault();
+        event.preventDefault();
 //     });
 // });
 // $("#work4").on({
