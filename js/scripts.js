@@ -121,17 +121,44 @@ $(document).ready(function() {
         
         var organisation = $("input#companytName").val();
         var contactName = $("input#contactPerson").val();
-        var numberOfStaff = $("input#staffOverhead").val();
-        var serviceIndustry = $("input#exclamation").val();
+        var CustomertelNo = $("input#telNo").val();
+        
+        function validateFormInput() {
+            var staffOverHead = document.querySelector('input[name = "group"]:checked');
+                if(staffOverHead != null){  //Test if something was checked
+                console.log(staffOverHead.value); //Alert the value of the checked.
+                } else {
+                alert('Kindly choose a group for your staff overhead!'); //Alert, nothing was checked.
+                }
+            var serviceIndustry = document.querySelector('input[name = "industry"]:checked');
+                if(serviceIndustry != null){  //Test if something was checked
+                console.log(serviceIndustry.value); //Alert the value of the checked.
+                } else {
+                alert('Kindly choose your industry of operation!'); //Alert, nothing was checked.
+                }
+            if(organisation== ""){
+              alert( "Kindly provide your company name" );
+              }
+            else if( contactName == "") {
+              alert( "Please provide for us the contact person's name" );}
+            else if(CustomertelNo !=null) {
+              alert( "Please provide your contact tel number for ease of follow up" );
+              
+            //   {var staffOverHead = document.querySelector('input[name = "group"]:checked');
 
-        let checkboxes = document.querySelectorAll('input[name="group1"]:checked');
-        if (checkboxes = false) {
-            alert ("please tick choose the category of your staff overhead staff!")
-        }else if (organisation == ""){
-            alert("Please input your organisation name");
-        }else if (contactName == ""){
-            alert ("Could we please have the name of the contact person?")
-        }else if           
+            //   if(checked_gender != null){  //Test if something was checked
+            //   alert(checked_gender.value); //Alert the value of the checked.
+            //   } else {
+            //   alert('Nothing checked'); //Alert, nothing was checked.
+            //   }}
+        // let checkboxes = document.querySelectorAll('input[name="group1"]:checked');
+        // if (checkboxes = false) {
+        //     alert ("please tick choose the category of your staff overhead staff!")
+        // }else if (organisation == ""){
+        //     alert("Please input your organisation name");
+        // }else if (contactName == ""){
+        //     alert ("Could we please have the name of the contact person?")
+        // }else if           
 
         // var verbInput = $("input#verb").val();
         // var nounInput = $("input#noun").val();
@@ -164,3 +191,7 @@ $(document).ready(function() {
 //     $(this).animate({opacity:'0'});
 //   })
 // alert('hi')
+            }
+        }
+    })
+})
