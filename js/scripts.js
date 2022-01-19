@@ -1,5 +1,6 @@
 // checking that js file is properly linked
 // alert('hi')
+
 $(document).ready(function() {
     $("#design").click(function(){
         $(".clickme1").toggle();
@@ -107,14 +108,15 @@ $(document).ready(function(){
     })
 // form input gathering
 $(document).ready(function() {
+    // confirming if company name is captured
     $("#customerinfo form").submit(function(event) {
         var organisationInput = $("input#companytName").val();
         if(organisationInput== ""){
             alert( "Kindly provide your company name" );
             }
         else
-            alert(organisationInput);
-    })
+            // console.log(organisationInput); 
+    // })
         // $('input[type="checkbox"]').click(function(){
         //     if($(this).prop("checked") == true){
         //         console.log("Checkbox is checked.");
@@ -126,13 +128,14 @@ $(document).ready(function() {
         // });
         
         // var organisationInput = $("input#companytName").val();
-        var contactNameInput = $("input#contactPerson").val();
-        if( contactNameInput == "") {
-            alert( "Please provide for us the contact person's name" );}
-        else
-            alert(contactNameInput);
+       
+        
+            // console.log(contactNameInput);
         var CustomertelNoInput = $("input#telNo").val();
-            alert(CustomertelNoInput);
+        if(CustomertelNoInput == "")
+            alert ('Kindly avail a contact telephone number for future follow up with ease!')
+        else
+            // alert(CustomertelNoInput);
         var operationIndustry = $("#industry").is(':checked');
            if (operationIndustry) {
                console.log('checked')
@@ -141,7 +144,13 @@ $(document).ready(function() {
         });
         var staffOverHead= $("#group").is(':checked');
             if (staffOverHead) {
-                alert(` Hi ${contactNameInput} We have received your message. Thank you for reaching out to us. One of our sales executives will reach out to you through the provided tel number for further guidance`)
+                
             }else
             alert('Please choose your company\'s overhead group')
-//   
+        var contactNameInput = $("input#contactPerson").val();
+            if( contactNameInput == "") {
+                alert( "Please provide for us the contact person's name" );}
+            else
+            alert(` Hi ${contactNameInput} We have received your message. Thank you for reaching out to us. One of our sales executives will reach out to you through the provided tel number for further guidance`)
+        })
+        
