@@ -112,26 +112,28 @@ $(document).ready(function() {
     $("#customerinfo form").submit(function(event) {
         var organisationInput = $("input#companytName").val();
         var CustomertelNoInput = $("input#telNo").val();
-        var operationIndustry = $("#industry").is(':checked');
+        var operationIndustry 
         var contactNameInput = $("input#contactPerson").val();
-        var staffOverHead= $("#group").is(':checked');
+        var staffOverHead
         
         if(organisationInput== ""){
             alert( "Kindly provide your company name" );
             }
-        else if (CustomertelNoInput== ""){
-            alert('Kindly avail your organisation\'s telephone no. for ease of phone conversation follow up.')
-        }
-        else if (operationIndustry)
-           alert('please choose your industry of operation')
-        else if (staffOverHead)
-            alert ('Please choose your company\'s overhead group')
         else if( contactNameInput == "") {
-            alert( "Please provide for us the contact person's name" );}
+                alert( "Please provide for us the contact person's name" );}
+        else if (CustomertelNoInput== ""){
+            alert('Kindly avail your organisation\'s telephone no. for ease of phone conversation follow up.')}
+
+        // else if (operationIndustry[0].checked==false && operationIndustry[1].checked==false && operationIndustry[2].checked==false && operationIndustry[3].checked==false && operationIndustry[4].checked==false && operationIndustry[5].checked==false) {
+        //     alert('please choose your industry of operation')}
+            
+        // else if (staffOverHead [0].checked==false && staffOverHead [1].checked==false && staffOverHead [2].checked==false && staffOverHead [3].checked==false)
+        //     alert ('Please choose your company\'s overhead group')
+       
         else
-            alert(` Hi ${contactNameInput} We have received your message. Thank you for reaching out to us. One of our sales executives will reach out to you through the provided tel number for further guidance`)
-    })
-})    
+            alert(` Hi ${contactNameInput}, we have received your message. Thank you for reaching out to us. One of our sales executives will reach out to you through the provided tel number for further guidance.`)
+    
+    })    
             // console.log(organisationInput); 
     // })
         // $('input[type="checkbox"]').click(function(){
@@ -170,4 +172,4 @@ $(document).ready(function() {
         //     else
         //     alert(` Hi ${contactNameInput} We have received your message. Thank you for reaching out to us. One of our sales executives will reach out to you through the provided tel number for further guidance`)
         // })
-        
+})
