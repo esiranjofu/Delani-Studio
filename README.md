@@ -27,6 +27,15 @@ This is an independent project done by ## Emily Siranjofu and you can reach me t
 
 -Push the commit to the remote repo using the command git push.
 
+## BDD
+- Get the assets from the given link
+- Create the html website
+- Create the toggle effect on the what we do section
+- Create the hover effect on the portfolio section
+- Get the form with all the necessary fields
+- Use the jquery function to have the form input values validated and that the form is not submitted with half the information not provided.
+- Share a feedback alert with the user to acknowledge receipt of their message
+
 ## Development
 Want to contribute? Great! To fix a bug or enhance an existing module, follow these steps:
 
@@ -44,3 +53,6 @@ Create a Pull Request
 [CSS]
 [Bootstrap]
 [JQuery]
+
+## Copyright (c) 2022 esiranjofu
+##  http://www.apache.org/licenses/LICENSE-2.0
