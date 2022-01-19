@@ -111,10 +111,27 @@ $(document).ready(function() {
     // confirming if company name is captured
     $("#customerinfo form").submit(function(event) {
         var organisationInput = $("input#companytName").val();
+        var CustomertelNoInput = $("input#telNo").val();
+        var operationIndustry = $("#industry").is(':checked');
+        var contactNameInput = $("input#contactPerson").val();
+        var staffOverHead= $("#group").is(':checked');
+        
         if(organisationInput== ""){
             alert( "Kindly provide your company name" );
             }
+        else if (CustomertelNoInput== ""){
+            alert('Kindly avail your organisation\'s telephone no. for ease of phone conversation follow up.')
+        }
+        else if (operationIndustry)
+           alert('please choose your industry of operation')
+        else if (staffOverHead)
+            alert ('Please choose your company\'s overhead group')
+        else if( contactNameInput == "") {
+            alert( "Please provide for us the contact person's name" );}
         else
+            alert(` Hi ${contactNameInput} We have received your message. Thank you for reaching out to us. One of our sales executives will reach out to you through the provided tel number for further guidance`)
+    })
+})    
             // console.log(organisationInput); 
     // })
         // $('input[type="checkbox"]').click(function(){
@@ -131,26 +148,26 @@ $(document).ready(function() {
        
         
             // console.log(contactNameInput);
-        var CustomertelNoInput = $("input#telNo").val();
-        if(CustomertelNoInput == "")
-            alert ('Kindly avail a contact telephone number for future follow up with ease!')
-        else
+        
+       
+        //     alert ('Kindly avail a contact telephone number for future follow up with ease!')
+        // else
             // alert(CustomertelNoInput);
-        var operationIndustry = $("#industry").is(':checked');
-           if (operationIndustry) {
-               console.log('checked')
-           }else
-           alert('please choose your industry of operation')
-        });
-        var staffOverHead= $("#group").is(':checked');
-            if (staffOverHead) {
+        
+        //    if (operationIndustry) {
+        //        console.log('checked')
+        //    }else
+        //    alert('please choose your industry of operation')
+        // });
+       
+        //     if (staffOverHead) {
                 
-            }else
-            alert('Please choose your company\'s overhead group')
-        var contactNameInput = $("input#contactPerson").val();
-            if( contactNameInput == "") {
-                alert( "Please provide for us the contact person's name" );}
-            else
-            alert(` Hi ${contactNameInput} We have received your message. Thank you for reaching out to us. One of our sales executives will reach out to you through the provided tel number for further guidance`)
-        })
+        //     }else
+        //     alert('Please choose your company\'s overhead group')
+       
+        //     if( contactNameInput == "") {
+        //         alert( "Please provide for us the contact person's name" );}
+        //     else
+        //     alert(` Hi ${contactNameInput} We have received your message. Thank you for reaching out to us. One of our sales executives will reach out to you through the provided tel number for further guidance`)
+        // })
         
