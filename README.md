@@ -37,3 +37,10 @@ Add changes to reflect the changes made
 Commit your changes (git commit -am 'Improve feature')
 Push to the branch (git push origin improve-feature)
 Create a Pull Request
+
+## Technologies used
+[Javasript]
+[HTML]
+[CSS]
+[Bootstrap]
+[JQuery]
