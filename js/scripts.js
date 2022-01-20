@@ -109,42 +109,43 @@ $(document).ready(function(){
     // check industry
     $(document).ready(function() {
         $("#customerinfo form").submit(function(event) {
-
-    var operationIndustry = document.getElementsByName('industry');
-    var checked=0;
-    for ( var i = 0; i < operationIndustry.length; i++) {
-        if(operationIndustry
-            [i].checked) {
+            var operationIndustry = document.getElementsByName('industry');
+            var checked=0;
+            for ( var i = 0; i < operationIndustry.length; i++) {
+            if(operationIndustry [i].checked) {
             checked++;
             
-        }
-    }
-    if (checked >0) {
-        console.log (checked)
+            }
+         }
+            if (checked >0) {
+            console.log (checked)
         
-    }else 
-      { //industry of service is not selected
-        alert("Please choose your service industry");
+        }else 
+            { //industry of service is not selected
+            alert("Please choose your service industry");
       }
     })
+    })
 
+    // check whether the overhead is checked or not
     $(document).ready(function() {
         $("#customerinfo form").submit(function(event) {
-        var staffOverHead = document.getElementsByName('group')
-        var check = 0
-        for (var i = 0; i <staffOverHead.length; i++){
-            if(staffOverHead
-                [i].check){
+            var staffOverHead = document.getElementsByName('group')
+            var check = 0
+            for (var i = 0; i <staffOverHead.length; i++){
+                if(staffOverHead [i].check){
                     check++
                 }
         }
-        if (check >0) {
-            console.log(check)
-    }else
-    { //overhead is not selected
-        alert("Please choose your overhead group");
-    }
+            if (check >0) {
+                console.log(check)
+            }else
+            { //overhead is not selected
+            alert("Please choose your overhead group");
+            }
         })
+    })
+ 
 // form input gathering
 $(document).ready(function() {
     // confirming if company name is captured
@@ -169,8 +170,9 @@ $(document).ready(function() {
         //     alert ('Please choose your company\'s overhead group')
        
         else
-            alert(` Hi ${contactNameInput}, we have received your message. Thank you for reaching out to us. One of our sales executives will reach out to you through the provided tel number for further guidance.`)        
-            // console.log(organisationInput); 
+            console.log(CustomertelNoInput)
+            // alert(` Hi ${contactNameInput}, we have received your message. Thank you for reaching out to us. One of our sales executives will reach out to you through the provided tel number for further guidance.`)        
+            // // console.log(organisationInput); 
     // })
         // $('input[type="checkbox"]').click(function(){
         //     if($(this).prop("checked") == true){
@@ -208,7 +210,5 @@ $(document).ready(function() {
         //     else
         //     alert(` Hi ${contactNameInput} We have received your message. Thank you for reaching out to us. One of our sales executives will reach out to you through the provided tel number for further guidance`)
         // })
-            })
-        })
     })
 })
