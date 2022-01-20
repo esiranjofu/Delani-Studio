@@ -170,45 +170,12 @@ $(document).ready(function() {
         //     alert ('Please choose your company\'s overhead group')
        
         else
-            console.log(CustomertelNoInput)
-            // alert(` Hi ${contactNameInput}, we have received your message. Thank you for reaching out to us. One of our sales executives will reach out to you through the provided tel number for further guidance.`)        
-            // // console.log(organisationInput); 
-    // })
-        // $('input[type="checkbox"]').click(function(){
-        //     if($(this).prop("checked") == true){
-        //         console.log("Checkbox is checked.");
-        //         }
-        //     else if($(this).prop("checked") == false){
-        //         alert("Kindly tick one option for your overhead staff.");
-        //         }
-        //     });
-        // });
-        
-        // var organisationInput = $("input#companytName").val();
-       
-        
-            // console.log(contactNameInput);
-        
-       
-        //     alert ('Kindly avail a contact telephone number for future follow up with ease!')
-        // else
-            // alert(CustomertelNoInput);
-        
-        //    if (operationIndustry) {
-        //        console.log('checked')
-        //    }else
-        //    alert('please choose your industry of operation')
-        // });
-       
-        //     if (staffOverHead) {
-                
-        //     }else
-        //     alert('Please choose your company\'s overhead group')
-       
-        //     if( contactNameInput == "") {
-        //         alert( "Please provide for us the contact person's name" );}
-        //     else
-        //     alert(` Hi ${contactNameInput} We have received your message. Thank you for reaching out to us. One of our sales executives will reach out to you through the provided tel number for further guidance`)
+            alert(` Hi ${contactNameInput}, 'we have received your message. Thank you for reaching out to us. One of our sales executives will reach out to you through the provided tel number which is,' ${CustomertelNoInput} for further assistance)
+
         // })
     })
 })
+$(".companytName").text(organisationInput);
+$(".contactPerson").text(contactNameInput);
+$(".telNo").text(CustomertelNoInput);
+
