@@ -106,16 +106,54 @@ $(document).ready(function(){
     }).mouseout(function(){
         $(".overlay8").hide();
     })
+    // check industry
+    $(document).ready(function() {
+        $("#customerinfo form").submit(function(event) {
+
+    var operationIndustry = document.getElementsByName('industry');
+    var checked=0;
+    for ( var i = 0; i < operationIndustry.length; i++) {
+        if(operationIndustry
+            [i].checked) {
+            checked++;
+            
+        }
+    }
+    if (checked >0) {
+        console.log (checked)
+        
+    }else 
+      { //industry of service is not selected
+        alert("Please choose your service industry");
+      }
+    })
+
+    $(document).ready(function() {
+        $("#customerinfo form").submit(function(event) {
+        var staffOverHead = document.getElementsByName('group')
+        var check = 0
+        for (var i = 0; i <staffOverHead.length; i++){
+            if(staffOverHead
+                [i].check){
+                    check++
+                }
+        }
+        if (check >0) {
+            console.log(check)
+    }else
+    { //overhead is not selected
+        alert("Please choose your overhead group");
+    }
+        })
 // form input gathering
 $(document).ready(function() {
     // confirming if company name is captured
     $("#customerinfo form").submit(function(event) {
         var organisationInput = $("input#companytName").val();
         var CustomertelNoInput = $("input#telNo").val();
-        var operationIndustry 
         var contactNameInput = $("input#contactPerson").val();
-        var staffOverHead
         
+
         if(organisationInput== ""){
             alert( "Kindly provide your company name" );
             }
@@ -123,7 +161,7 @@ $(document).ready(function() {
                 alert( "Please provide for us the contact person's name" );}
         else if (CustomertelNoInput== ""){
             alert('Kindly avail your organisation\'s telephone no. for ease of phone conversation follow up.')}
-
+        
         // else if (operationIndustry[0].checked==false && operationIndustry[1].checked==false && operationIndustry[2].checked==false && operationIndustry[3].checked==false && operationIndustry[4].checked==false && operationIndustry[5].checked==false) {
         //     alert('please choose your industry of operation')}
             
@@ -131,9 +169,7 @@ $(document).ready(function() {
         //     alert ('Please choose your company\'s overhead group')
        
         else
-            alert(` Hi ${contactNameInput}, we have received your message. Thank you for reaching out to us. One of our sales executives will reach out to you through the provided tel number for further guidance.`)
-    
-    })    
+            alert(` Hi ${contactNameInput}, we have received your message. Thank you for reaching out to us. One of our sales executives will reach out to you through the provided tel number for further guidance.`)        
             // console.log(organisationInput); 
     // })
         // $('input[type="checkbox"]').click(function(){
@@ -172,4 +208,7 @@ $(document).ready(function() {
         //     else
         //     alert(` Hi ${contactNameInput} We have received your message. Thank you for reaching out to us. One of our sales executives will reach out to you through the provided tel number for further guidance`)
         // })
+            })
+        })
+    })
 })
