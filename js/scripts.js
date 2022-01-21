@@ -130,31 +130,40 @@ $(document).ready(function(){
     // check whether the overhead is checked or not
     $(document).ready(function() {
         $("#customerinfo form").submit(function(event) {
-            var staffOverHead = document.getElementsByName('group')
-            var check = 0
-            for (var i = 0; i <staffOverHead.length; i++){
-                if(staffOverHead [i].check){
-                    check++
-                }
+            var staffOverhead = document.querySelector('input[name = "group"]:checked');
+            if(staffOverhead != null){  //Test if something was checked
+            console.log(staffOverhead.value); //Alert the value of the checked.
+        } else {
+        alert('Please choose your staff overhead group'); //Alert, nothing was checked.
         }
-            if (check >0) {
-                console.log(check)
-            }else
-            { //overhead is not selected
-            alert("Please choose your overhead group");
-            }
         })
-    })
+        
+    //         var staffOverHead = document.getElementsByName('group')
+    //         var check = 0
+    //         for (var n = 0; n <staffOverHead.length; n++){
+    //             if(staffOverHead [n].check){
+    //                 check++;
+    //             }
+    //     }
+    //         if (check =0) {
+    //             console.log(check)
+    //         }else
+    //         { //overhead is not selected
+    //         alert("Please choose your overhead group");
+    //         }
+    //     })
+    // })
  
 // form input gathering
 $(document).ready(function() {
     // confirming if company name is captured
     $("#customerinfo form").submit(function(event) {
-        var organisationInput = $("input#companytName").val();
+        var organisationInput = $("input#companyName").val();
         var CustomertelNoInput = $("input#telNo").val();
         var contactNameInput = $("input#contactPerson").val();
         
-
+        
+        
         if(organisationInput== ""){
             alert( "Kindly provide your company name" );
             }
@@ -170,12 +179,6 @@ $(document).ready(function() {
         //     alert ('Please choose your company\'s overhead group')
        
         else
-            alert(` Hi ${contactNameInput}, 'we have received your message. Thank you for reaching out to us. One of our sales executives will reach out to you through the provided tel number which is,' ${CustomertelNoInput} for further assistance)
-
-        // })
+           alert(`Hi ${contactNameInput} thank you for your message. One of our executive representatives will get in touch with you through the provided telephone number, ie ${CustomertelNoInput} for further guidance.`)})
+        })
     })
-})
-$(".companytName").text(organisationInput);
-$(".contactPerson").text(contactNameInput);
-$(".telNo").text(CustomertelNoInput);
-
