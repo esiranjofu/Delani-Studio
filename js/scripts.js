@@ -6,7 +6,7 @@ $(document).ready(function() {
         $(".clickme1").toggle();
         $("#design-show").toggle();
         $("#design-show").css("textAlign", "center");
-        $( "p" )
+        $( "h4" )
             .on( "mouseenter", function() {
             $( this ).css({
             "font-weight": "bolder"
@@ -24,7 +24,7 @@ $( this ).css( styles );
         $(".clickme2").toggle();
         $("#development-show").toggle();
         $("#development-show").css("textAlign", "center");
-        $("p")
+        $("h4")
         .on( "mouseenter", function() {
             $( this ).css({
             "font-weight": "bolder"
@@ -42,7 +42,7 @@ $("#product").click(function(){
     $(".clickme3").toggle();
     $("#product-show").toggle();
     $("#product-show").css("textAlign", "center");
-    $("p")
+    $("h4")
     .on( "mouseenter", function() {
         $( this ).css({
         "font-weight": "bolder"
