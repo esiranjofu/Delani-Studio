@@ -123,6 +123,7 @@ $(document).ready(function(){
         }else 
             { //industry of service is not selected
             alert("Please choose your service industry");
+            
       }
     })
     })

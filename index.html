@@ -14,6 +14,7 @@
           <h3>TO DELANI STUDIO</h3>
           <h5>AMAZING PEOPLE ARE MAKING AMAZING DESIGNS IN A FUN ENVIRONMENT</h5>
             <div class="mouse-click"></div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
               <a href="#about-us"><img src="../delani-studio/social icons/mouse_click.png" alt=" mouse_click" id="mouse-click"></a> 
         </div>
       </div>
@@ -104,14 +105,26 @@
         <h2>CONTACT US</h2>
         <div id="customerinfo">
           <form>
-            <div class="form-group">
-              <label for="companyName">Company Name</label>
-              <input id="companyName" class="form-control" type="text" length="500" placeholder="Company name">
+            <div class="row">
+              <div class="column">
+                <div class="form-group">
+                  <label for="companyName">Company Name</label>
+                  <input id="companyName" class="form-control" type="text" length="500" placeholder="Company name">
+                  </div>
+              </div>  
+              <div class="column">
+                <div class="form-group">
+                <label for="contactPerson">Contact Name</label>
+                <input id="contactPerson" class="form-control" type="text" length="500" placeholder="contact person's name">
+                </div>
             </div>
-            <div class="form-group">
-              <label for="contactPerson">Contact Name</label>
-              <input id="contactPerson" class="form-control" type="text" length="500" placeholder="The name of contact person">
-            </div>
+          </div>   
+            <br>
+          <div class="form-group">
+            <!-- <label for="comments">Company Comments:</label> -->
+            <textarea id="comments" name="comments" rows="6" cols="50" placeholder="Your message here" required></textarea>
+          </div>
+          <br>
             <div class="radio">
               <label for="staffOverhead">Staff Overhead</label>
                 <br/>
@@ -171,10 +184,6 @@
                 <input id="date" class="form-control" type="date" required>
               </div>
               <div class="form-group">
-              <label for="comments">Company Comments:</label>
-              <textarea id="comments" name="comments" rows="6" cols="50" required></textarea>
-              </div>
-              <div class="form-group">
                 <fieldset>
                   <legend>Company Billing Address</legend>
                   <div class="row" id="contact-info-input">
@@ -201,7 +210,7 @@
                   </div>  
                 </fieldset>
               </div>
-                  <button type="submit" id="" class="btn">Submit</button>
+              <button type="submit" id="" class="btn">Submit</button>
             </form>  
           </div>
         </div>
