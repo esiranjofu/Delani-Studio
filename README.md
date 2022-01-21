@@ -1,5 +1,5 @@
 # Delani-Studio
-Recreating a landing page for a Delani studio using JQuery, HTML, bootstrap and CSS
+Recreating a landing page for Delani studio using JQuery, HTML, bootstrap and CSS
 
 ## Contributor
 This is an independent project done by ## Emily Siranjofu and you can reach me through my email address esiranjo@gmail.com
@@ -46,13 +46,16 @@ https://esiranjofu.github.io/Delani-studio
 ## Development
 Want to contribute? Great! To fix a bug or enhance an existing module, follow these steps:
 
-Fork the repo
-Create a new branch (git checkout -b improve-feature)
-Make the appropriate changes in the files
-Add changes to reflect the changes made
-Commit your changes (git commit -am 'Improve feature')
-Push to the branch (git push origin improve-feature)
-Create a Pull Request
+-Fork the repo
+-Create a new branch (git checkout -b improve-feature)
+-Make the appropriate changes in the files
+-Add changes to reflect the changes made
+-Commit your changes (git commit -am 'Improve feature')
+-Push to the branch (git push origin improve-feature)
+-Create a Pull Request
+
+##Bug / Feature Request
+If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an issue here on this website including your search query and the expected result.
 
 ## Technologies used
 [Javasript]
