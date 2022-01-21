@@ -59,52 +59,52 @@ $( this ).css( styles );
 
 $(document).ready(function(){
     $("#work4").mouseover(function(){
-      $(".overlay4").show();
+      $(".overlay4").show({opacity: '1'});
     }).mouseout(function(){
-      $(".overlay4").hide();
+      $(".overlay4").hide({opacity: '0'});
     });
   });
 
     $("#work3").mouseover(function(){
-        $(".overlay3").show();
+        $(".overlay3").show({opacity: '1'});
     }).mouseout(function(){
-        $(".overlay3").hide();
+        $(".overlay3").hide({opacity: '0'});
     });
 
     $("#work2").mouseover(function(){
-        $(".overlay2").show();
+        $(".overlay2").show({opacity: '1'});
     }).mouseout(function(){
-        $(".overlay2").hide();
+        $(".overlay2").hide({opacity: '0'});
     });
 
     $("#work1").mouseover(function(){
-        $(".overlay1").show();
+        $(".overlay1").show({opacity: '1'});
     }).mouseout(function(){
-        $(".overlay1").hide();
+        $(".overlay1").hide({opacity: '0'});
     });
 
     $("#work5").mouseover(function(){
-        $(".overlay5").show();
+        $(".overlay5").show({opacity: '1'});
     }).mouseout(function(){
-        $(".overlay5").hide();
+        $(".overlay5").hide({opacity: '0'});
     });
 
     $("#work6").mouseover(function(){
-        $(".overlay6").show();
+        $(".overlay6").show({opacity: '1'});
     }).mouseout(function(){
-        $(".overlay6").hide();
+        $(".overlay6").hide({opacity: '0'});
     });
 
     $("#work7").mouseover(function(){
-        $(".overlay7").show();
+        $(".overlay7").show({opacity: '1'});
     }).mouseout(function(){
-        $(".overlay7").hide();
+        $(".overlay7").hide({opacity: '0'});
     });
 
     $("#work8").mouseover(function(){
-        $(".overlay8").show();
+        $(".overlay8").show({opacity: '1'});
     }).mouseout(function(){
-        $(".overlay8").hide();
+        $(".overlay8").hide({opacity: '0'});
     })
     // check industry
     $(document).ready(function() {

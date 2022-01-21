@@ -11,6 +11,13 @@ body {
 h2, h3, h5 {
   font-family: 'Merriweather', serif;
 }
+.overlay1, .overlay2, .overlay3, .overlay4, .overlay5, .overlay6, .overlay7, .overlay8 {
+    float:center;
+            overflow: hidden;
+            opacity: 1;
+            width: 400px;
+            padding: 0px;
+}
 img {
   height: auto;
   max-width: auto;
