@@ -54,7 +54,8 @@ Want to contribute? Great! To fix a bug or enhance an existing module, follow th
 -Push to the branch (git push origin improve-feature)
 -Create a Pull Request
 
-##Bug / Feature Request
+## Bug / Feature Request
+
 If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an issue here on this website including your search query and the expected result.
 
 ## Technologies used
