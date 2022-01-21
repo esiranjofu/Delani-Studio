@@ -4,6 +4,10 @@ Recreating a landing page for a Delani studio using JQuery, HTML, bootstrap and 
 ## Contributor
 This is an independent project done by ## Emily Siranjofu and you can reach me through my email address esiranjo@gmail.com
 
+## Screenshot Image
+![image](https://user-images.githubusercontent.com/93584955/150576096-f2be0dcc-018d-4591-b7a6-c4a7bea072c7.png)
+
+
 ## Setup/Installation Requirements
 -Create a repository in the local machine.
 
